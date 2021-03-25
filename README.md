@@ -14,7 +14,7 @@ The project would be conducted in 2 phases:
 2. To avoid manual labour, a Python-based webscrapper (see scrapper.py in this repo) was implemented to collect the data. The Selenium and the Beautiful Soup libraries were chosen for this purpose. Selenium is usually used for automating the testing of front end interfaces, by simulating how users would interact with an interface. But, for our project, Selenium is instead used to perform manual navigation of Mutein's website. Simultaneously, Beautiful Soup will parse the HTML webpages and acquire the dataset we desire. In short, the data collector simply just runs scrapper.py to completion without doing any tedious manual work.  
 3. The data collected was stored in 5 csv files:  
    1. wt_table.csv: contains wildtype code and wildtype fasta sequence.
-   2. mt_table.csv: contains mutant code, its corresponding wildtype code and mutant fasta sequence.
+   2. mt_table.csv: contains mutant code, organism, its corresponding wildtype code and mutant fasta sequence.
    3. rxn_table.csv: contains rxn_id, mutant code, substrate of rxn, product of rxn, the type of rxn, EC code and rxn co-protein.
    4. pub_table.csv: contains pubmed_id, rxn_id and mutant code.
    5. mt_act_table.csv: contains rxn_id, mutant code, relative activity value, activity value and activity unit
